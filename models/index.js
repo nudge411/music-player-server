@@ -10,8 +10,8 @@ const sequelize = new Sequelize(
   config
 );
 
-db.Problems = require("./problems")(sequelize, Sequelize);
-db.Results = require("./results")(sequelize, Sequelize);
+db.Album = require("./album")(sequelize, Sequelize);
+db.Song = require("./song")(sequelize, Sequelize);
 
 Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {

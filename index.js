@@ -18,7 +18,7 @@ app.use(express.json()); // json형식으로 본문처리
 app.use(express.urlencoded({ extended: true })); // form data 처리
 app.use(cors());
 
-app.use("/api", APIRouter);
+app.use("/", APIRouter);
 
 app.listen(3065, () => {
   console.log(`server is running on localhost:3065`);

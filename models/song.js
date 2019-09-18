@@ -1,18 +1,14 @@
 module.exports = (sequelize, DataTypes) => {
-  const Results = sequelize.define(
-    "Results",
+  const Song = sequelize.define(
+    "Song",
     {
-      problem_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-      },
-      answer: {
+      title: {
         type: DataTypes.TEXT,
         allowNull: false
       },
 
-      result: {
-        type: DataTypes.INTEGER,
+      url: {
+        type: DataTypes.TEXT,
         allowNull: false
       }
     },
@@ -21,5 +17,10 @@ module.exports = (sequelize, DataTypes) => {
       collate: "utf8_general_ci"
     }
   );
-  return Results;
+
+  Song.associate = db => {
+    db.Song.belongsTo(db.Album);
+  };
+
+  return Song;
 };
