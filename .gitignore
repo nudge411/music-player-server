@@ -58,6 +58,7 @@ bower_components
 build/Release
 
 # Dependency directories
+config/
 node_modules/
 nudge411-music-player.pem/
 .pem
@@ -86,8 +87,8 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
 .env.test
+.env
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache

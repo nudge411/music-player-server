@@ -20,6 +20,6 @@ app.use(cors());
 
 app.use("/", APIRouter);
 
-app.listen(33811, () => {
-  console.log(`server is running on 33811`);
+app.listen(3000, () => {
+  console.log(`server is running on 3000`);
 });
