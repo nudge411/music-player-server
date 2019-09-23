@@ -59,6 +59,9 @@ build/Release
 
 # Dependency directories
 node_modules/
+nudge411-music-player.pem/
+.pem
+*.pem
 jspm_packages/
 
 # TypeScript v1 declaration files

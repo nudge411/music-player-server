@@ -3,26 +3,29 @@ dotenv.config();
 
 module.exports = {
   development: {
-    username: "root", // your username
+    username: "nudge411", // your username
     password: process.env.DB_PASSWORD, // your password
-    database: "music_player", // your database name
-    host: "127.0.0.1",
+    database: "musicplayermission", // your database name
+    host: "musicplayermission.cnetgtmn8zrm.ap-northeast-2.rds.amazonaws.com",
+    port: "33811",
     dialect: "mysql",
     operatorsAliases: false
   },
   test: {
-    username: "root",
+    username: "nudge411",
     password: process.env.DB_PASSWORD,
-    database: "music_player",
-    host: "127.0.0.1",
+    database: "musicplayermission",
+    host: "musicplayermission.cnetgtmn8zrm.ap-northeast-2.rds.amazonaws.com",
+    port: "33811",
     dialect: "mysql",
     operatorsAliases: false
   },
   production: {
-    username: "root",
+    username: "nudge411",
     password: process.env.DB_PASSWORD,
-    database: "music_player",
-    host: "127.0.0.1",
+    database: "musicplayermission",
+    host: "musicplayermission.cnetgtmn8zrm.ap-northeast-2.rds.amazonaws.com",
+    port: "33811",
     dialect: "mysql",
     operatorsAliases: false
   }
